@@ -8,16 +8,9 @@
 <body>
 
     <h1>Home page</h1>
-    <form action="/logs/parse" method="post">
+    <form action="/battlelogs/parsed" method="post">
         <label>
             <textarea name="battleLogs" rows="30" cols="80" placeholder="Paste battle log here"></textarea>
-        </label>
-        <label>Select output format</label>
-        <label>
-            <select name="outputFormat">
-                <option value="xml">XML</option>
-                <option value="json">JSON</option>
-            </select>
         </label>
         <button type="submit">Parse logs</button>
     </form>
