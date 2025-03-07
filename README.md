@@ -1,0 +1,1 @@
+A web-based application that lets you watch the replay of a game played in Pokémon TCG Live, by copy pasting the battle log. More incoming
