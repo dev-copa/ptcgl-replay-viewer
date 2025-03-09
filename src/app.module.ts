@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { BattlelogsService } from './battlelogs/battlelogs.service';
-import { BattlelogsController } from './battlelogs/battlelogs.controller';
-import { BattlelogsModule } from './battlelogs/battlelogs.module';
+import { ParserService } from './utils/parser/parser.service';
+import { ParserController } from './utils/parser/parser.controller';
+import { ParserModule } from './utils/parser/parser.module';
 
 @Module({
-  imports: [BattlelogsModule],
-  controllers: [AppController, BattlelogsController],
-  providers: [AppService, BattlelogsService],
+  imports: [ParserModule],
+  controllers: [AppController, ParserController],
+  providers: [AppService, ParserService],
 })
 export class AppModule {}

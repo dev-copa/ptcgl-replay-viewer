@@ -1,9 +1,9 @@
 import { Body, Controller, Get, Post, Render } from '@nestjs/common';
-import { BattlelogsService } from './battlelogs.service';
+import { ParserService } from './parser.service';
 
-@Controller('battlelogs')
-export class BattlelogsController {
-  constructor(private readonly battlelogsService: BattlelogsService) {}
+@Controller('parser')
+export class ParserController {
+  constructor(private readonly battlelogsService: ParserService) {}
 
   @Get()
   @Render('index')

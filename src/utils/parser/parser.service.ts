@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class BattlelogsService {
+export class ParserService {
   async parseLogs(logs: string) {
     const parsed = this.processLogs(logs);
     return { format: 'json', data: parsed };
