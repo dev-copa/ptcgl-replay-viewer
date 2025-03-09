@@ -56,7 +56,8 @@ describe('BattlelogsService', () => {
     });
 
     it('should handle logs with actions outside of turns', async () => {
-      const mockLogs = 'Action 1\nTurn #1\nAction 2\nAction 3\nTurn #2\nAction 4';
+      const mockLogs =
+        'Action 1\nTurn #1\nAction 2\nAction 3\nTurn #2\nAction 4';
       const expectedResult = {
         format: 'json',
         data: {
